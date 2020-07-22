@@ -22,7 +22,7 @@ def get_filters():
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     city = input("Please provide if you would like to review chicago, washington or new york city:")
     while True:
-        if city not in CITY_DATA:
+        if city not in CITY_DATA
             print('Invalid City')
         else:
             city = input("Please provide if you would like to review chicago, washington or new york city:")
@@ -33,18 +33,22 @@ def get_filters():
     # TO DO: get user input for month (all, january, february, ... , june)
     month_list = ['january', 'february', 'march', 'april', 'may', 'june', 'all']
     month = input('Please provide the month: ')
-    while month not in month_list:
-        print('invalid month')
-        month = input('Please provide the month: ')
+    while True:
+        if month not in month_list
+            print('invalid month')
+        else:
+            month = input('Please provide the month: ')
 
 
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
     day_list = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday', 'all']
     day = input('Please provide the day: ')
-    while day not in day_list:
-        print('invalid day')
-        month = input('Please provide the day: ')
-        break
+    while True:
+        if day not in day_list
+            print('invalid day')
+        else:
+            day = input('Please provide the day: ')
+
 
     print('-'*40)
     return city, month, day
